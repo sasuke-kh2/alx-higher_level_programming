@@ -2,11 +2,11 @@
 def safe_print_list_integers(my_list=[], x=0):
     counter = 0
     for pr in my_list:
-        try:
-            if pr == my_list[x]:
-                break
-        except IndexError:
-            x = x
+#        try:
+#            if pr == my_list[x]:
+#                break
+#        except IndexError:
+#            x = x
         try:
             print("{:d}".format(pr), end="")
             counter = counter + 1
