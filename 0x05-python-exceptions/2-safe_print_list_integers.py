@@ -4,8 +4,7 @@ def safe_print_list_integers(my_list=[], x=0):
     for pr in my_list:
         try:
             if pr == my_list[x]:
-#                break
-                pr = pr 
+                break
         except IndexError:
             x = x
         try:
