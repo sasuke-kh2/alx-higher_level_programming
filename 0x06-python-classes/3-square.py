@@ -5,8 +5,6 @@ The Square module contains class called Square
 """
 
 
-
-
 class Square:
     """Square class
 
@@ -23,6 +21,7 @@ class Square:
             raise TypeError("size must be an integer")
         elif int(__size) < 0:
             raise ValueError("size must be >= 0")
+
     def area(self):
         """return the square area
 
