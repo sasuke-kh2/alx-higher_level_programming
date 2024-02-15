@@ -17,5 +17,7 @@ class Square:
         self.__size = __size
         if isinstance(__size, str):
             raise TypeError("size must be an integer")
+        elif isinstance(__size, float):
+            raise TypeError("size must be an integer")
         elif int(__size) < 0:
             raise ValueError("size must be >= 0")
