@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""this moudle containes Rectangle class"""
+
+
 class Rectangle:
     """Rectangle class."""
 
