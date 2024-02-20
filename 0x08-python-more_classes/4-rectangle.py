@@ -48,11 +48,11 @@ class Rectangle:
             return 0
         else:
             return (self.__height + self.__width) * 2
-    
+
     def __repr__(self):
         """Return a string representation of the rectangle."""
         return f"Rectangle({self.width}, {self.height})"
-    
+
     def __str__(self):
         """Return a string representation of the rectangle."""
         result = ""
