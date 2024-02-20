@@ -53,5 +53,7 @@ class Rectangle:
         """Return a string representation of the rectangle."""
         result = ""
         for _ in range(self.height):
-            result += "#" * self.width + "\n"
+            result += "#" * self.width
+            if _ < self.height - 1:
+                result += "\n"
         return result
