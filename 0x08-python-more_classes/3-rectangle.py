@@ -52,6 +52,8 @@ class Rectangle:
     def __str__(self):
         """Return a string representation of the rectangle."""
         result = ""
+        if self.width == 0 or self.height == 0:
+            return ""
         for _ in range(self.height):
             result += "#" * self.width
             if _ < self.height - 1:
