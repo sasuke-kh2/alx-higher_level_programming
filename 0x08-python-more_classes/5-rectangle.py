@@ -64,5 +64,7 @@ class Rectangle:
                 if _ < self.height - 1:
                     result += "\n"
         return result
+
     def __del__(self):
+        """prints message when a Rectangle is deleted"""
         print("Bye rectangle...")
