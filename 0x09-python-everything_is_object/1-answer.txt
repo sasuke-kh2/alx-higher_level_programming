@@ -1,1 +1,1 @@
-__dict__
+globals
