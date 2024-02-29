@@ -9,4 +9,4 @@ class BaseGeometry:
 
     def area(self):
         """Public instance metho"""
-        raise("area() is not implemented")
+        raise Exception("area() is not implemented")
