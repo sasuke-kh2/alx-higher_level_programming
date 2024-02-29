@@ -1,10 +1,14 @@
 #!/usr/bin/python3
-"""This module includes the below class"""
+"""this moudule includes
+    the bellow class"""
+
 
 class BaseGeometry:
-    """Not an empty class"""
+    """not an empty class"""
     def area(self):
-        """Public instance method that raises an Exception."""
+        """Public instance method  that raises an
+            Exception with the a message
+        """
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
@@ -20,14 +24,11 @@ class BaseGeometry:
         if self.value <= 0:
             raise ValueError("{} must be greater than 0".format(self.name))
 
+
 class Rectangle(BaseGeometry):
-    """Class Rectangle that inherits from BaseGeometry"""
+    """class Rectangle that inherits from BaseGeometry"""
     def __init__(self, width, height):
         self.integer_validator("width", width)
         self.integer_validator("height", height)
         self.__height = height
         self.__width = width
-
-    def is_subclass_of_base_geometry(self):
-        """Check if Rectangle is a subclass of BaseGeometry."""
-        return BaseGeometry in self.__class__.__bases__
